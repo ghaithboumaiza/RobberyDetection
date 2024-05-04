@@ -12,9 +12,7 @@ jobs:
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: Clear Docker build cache
         run: docker builder prune -a -f
-      - name: find  cokerfile
-        run: cd ../..
       - name: Build docker image
-        run: docker build .
+        run: docker build -t C:\Users\ghaith.boumaiza\Desktop\projects\RobberyDetection\Dockerfile
       - name: Publish image to docker hub
         run: docker push ghaithbmz/robbery:latest
