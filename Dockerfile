@@ -4,11 +4,7 @@ FROm jupyter/datascience-notebook:latest
 WORKDIR /RobberyDetection
 COPY . /RobberyDetection
 
-RUN sudo apt-get install qtbase5-dev
-RUN pip install pyqt5
 
-# Install Google Colab
-RUN pip install google-colab
 
 
 EXPOSE 3002
