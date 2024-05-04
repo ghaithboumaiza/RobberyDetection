@@ -1,0 +1,6 @@
+keras==3.3.3
+twilio==9.0.5
+cv2==4.8.0
+tensorflow==2.15.0
+PIL==9.4.0
+numpy==1.25.2
