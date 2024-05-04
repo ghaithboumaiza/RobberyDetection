@@ -13,6 +13,7 @@ jobs:
       - name: Clear Docker build cache
         run: docker builder prune -a -f
       - name: Build docker image
-        run: docker build ..\.. .
+        run: cd ../..
+        run: docker build .
       - name: Publish image to docker hub
         run: docker push ghaithbmz/robbery:latest
